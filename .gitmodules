@@ -4,3 +4,15 @@
 [submodule "bundle/vim-gitgutter"]
 	path = bundle/vim-gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git
+[submodule "bundle/indentpython"]
+	path = bundle/indentpython
+	url = https://github.com/vim-scripts/indentpython.vim.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/vim-syntastic/syntastic.git
+[submodule "bundle/fastfold"]
+	path = bundle/fastfold
+	url = https://github.com/Konfekt/FastFold.git
+[submodule "bundle/vim-rubocop"]
+	path = bundle/vim-rubocop
+	url = https://github.com/ngmy/vim-rubocop.git
