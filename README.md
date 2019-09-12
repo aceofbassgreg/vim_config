@@ -10,5 +10,5 @@ $ git submodule update --init
 
 ## Pathogen
 
-[Pathogen](https://github.com/tpope/vim-pathogen) is used to install plugins and runtime files into their own private directiories. In many cases all that is required is to `git clone` a plugin into the `bundle/` directory. 
+[Pathogen](https://github.com/tpope/vim-pathogen) is used to install plugins and runtime files into their own private directiories. In many cases all that is required is to `git submodule add GIT_URL` a plugin into the `bundle/` directory. 
 
