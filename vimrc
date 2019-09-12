@@ -1,6 +1,7 @@
 execute pathogen#infect()
 set nocompatible
 filetype on
+filetype plugin on
 syntax on
 colorscheme nord
 set updatetime=100
@@ -16,13 +17,19 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set smartindent
-set autoindent
 set showmatch
 
+" Make navigating split tiles easier
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+" Make navigating tabs the same as Safari / Firefox
+nnoremap th  :tabfirst<CR>
+nnoremap tk  :tabnext<CR>
+nnoremap tj  :tabprev<CR>
+nnoremap tl  :tablast<CR>
 
 " Enable folding, folding with space bar
 set foldmethod=indent
@@ -50,3 +57,7 @@ let g:vimrubocop_config = '~/.vim/.rubocop.yml'
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
+
+" Name terminal tabs after filenames
+autocmd BufEnter * let &titlestring = expand("%:@")
+set title
