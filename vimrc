@@ -61,3 +61,6 @@ autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 " Name terminal tabs after filenames
 autocmd BufEnter * let &titlestring = expand("%:@")
 set title
+
+" add space after comment symbol
+let g:NERDSpaceDelims = 1
