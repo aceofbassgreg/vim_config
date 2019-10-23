@@ -1,5 +1,6 @@
 ## Installing
 
+First, [install Pathogen](https://github.com/tpope/vim-pathogen#installation). Then: 
 ```
 $ cd ~/
 $ git clone --recursive git@github.com:aceofbassgreg/vim_config.git
