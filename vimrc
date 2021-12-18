@@ -6,7 +6,6 @@ syntax on
 colorscheme nord
 set updatetime=100
 set number
-set colorcolumn=90
 let mapleader=" "
 map  s :source ~/.vimrc<CR>
 set hidden
@@ -64,3 +63,4 @@ set title
 
 " add space after comment symbol
 let g:NERDSpaceDelims = 1
+let g:ruby_path = system('echo $HOME/.rbenv/shims')
